@@ -5,4 +5,9 @@ ENV APP_HOME /home/app
 
 WORKDIR $APP_HOME
 
-COPY sample.py sample.py
+RUN apt-get update -qq && apt-get install -y build-essential \
+  python3-pip
+
+COPY requirements.txt requirements.txt
+
+RUN pip3 install -r requirements.txt
