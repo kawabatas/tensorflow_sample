@@ -1,4 +1,5 @@
 # tensorflow_sample
+学習モデルを一から作る
 [参考](https://book.mynavi.jp/manatee/detail/id=87654)
 
 ## 画像ダウンロード
